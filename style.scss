@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+.waves
+{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background: #2B7EFF;
+  background-image: linear-gradient(180deg, #83B3FE, #2B7EFF);
+}
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave.png);
+  background-size: 1000px 100px;
+}
+
+.wave.wave1
+{
+  animation: animate 7s linear infinite;
+  z-index: 100;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.wave.wave2
+{
+  animation: animate2 10s linear infinite;
+  z-index: 99;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 0;
+}
+
+.wave.wave3
+{
+  animation: animate 14s linear infinite;
+  z-index: 98;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 0;
+}
+
+@keyframes animate {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes trans {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.aboutme
+{
+  position: relative;
+  max-width: 800px;
+  border-radius: 40px;
+  border: 1px solid rgba(220, 220, 220, 0.70);
+  padding: 60px;
+  margin: auto;
+  bottom: 590px;
+  z-index: 999;
+  background:rgba(210, 210, 210, 0.20);
+  backdrop-filter: blur(25px);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46,45,68,0.03);
+  font-family: Poppins;
+  overflow: hidden;
+  color: white;
+  animation: trans 1s ease-in-out;
+  animation-delay: 3s linear;
+
+}
+
+.hi
+{
+  position: relative;
+  text-align: center;
+  bottom: 680px;
+  font-family: Poppins;
+  color: white;
+  max-width: 800px;
+  margin: auto;
+  animation: trans 1s ease-in-out;
+  animation-delay: 3s linear;
+}
+
+.hi h1
+{
+  font-size: 60px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.hi h1:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.hi h3
+{
+  font-size: 24px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hi a:link, a:visited, a:active{
+  text-decoration: none;
+  color:#2B7EFF;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.15s ease-in-out;
+}
+
+.hi a:hover
+{
+  color:white;
+  background-color: #2B7EFF;
+  transition: 0.15s ease-in-out;
+  border: 1px solid white;
+}
+
+.contactme
+{
+  margin: 20px;
+}
+
+.aboutme h1
+{
+  margin-bottom: 20px;
+}
+
+.aboutme h2
+{
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.skills{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  bottom: 330px;
+  font-family: Poppins;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  padding: 20px;
+
+  border-radius: 40px;
+  border: 1px solid rgba(235, 235, 235, 0.70);
+  background:rgba(210, 210, 210, 0.20);
+  backdrop-filter: blur(20px);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46,45,68,0.03);
+  z-index: 100;
+
+}
+
+.skills h1{
+
+  font-family: Poppins;
+  color: #2B7EFF
+}
+
+.skilllist
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.skilllist h3
+{
+  color: white;
+  background-color: #2B7EFF;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 20px;
+
+  cursor: default;
+  overflow: hidden;
+
+}
+
+.projectsheading
+{
+  position: relative;
+  font-family: Poppins;
+  font-size: 28px;
+  color: #2B7EFF;
+  text-align: center;
+  bottom: 320px;
+  animation: trans 1s ease-in-out;
+  animation-delay: 3s linear;
+}
+
+
+.project
+{
+  position: relative;
+  max-width: 800px;
+  border-radius: 40px;
+  border: 1px solid rgba(220, 220, 220, 0.50);
+  padding: 0px;
+  margin: auto;
+  bottom: 280px;
+  z-index: 999;
+  background:rgba(210, 210, 210, 0.20);
+  backdrop-filter: blur(20px);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46,45,68,0.03);
+  font-family: Poppins;
+  overflow: hidden;
+  animation: trans 1s ease-in-out;
+  animation-delay: 3s linear;
+
+
+}
+
+.project h1
+{
+  color: #2B7EFF;
+  background-color: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(20px);
+  background-clip: padding-box;
+  background-size: 100% 100%;
+}
+
+.project h2, h3
+{
+  color: white;
+  font-weight: lighter;
+}
+
+.githublink
+{
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:20px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.githublink a:link, a:visited, a:active{
+
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  color: #2B7EFF;
+  transition: 0.15s ease-in-out;
+}
+.githublink a:hover
+{
+  color: white;
+  background-color:#2B7EFF;
+  transition: 0.15s ease-in-out;
+}
+
+.lowerbody
+{
+    background-image: url(background-for-website.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
+
+.underthewave
+{
+  position: relative;
+
+  background-image: url(background-for-website.png);
+  height: 100vh;
+}
+
+.soon
+{
+  font-size: 30px;
+  font-family: Poppins;
+  text-align: center;
+  bottom: 150px;
+  position: relative;
+  animation: trans 1s ease-in-out;
+  animation-delay: 3s linear;
+}
